@@ -9,3 +9,12 @@ closeCookies = () => {
 };
 
 cookiesButton.addEventListener('click', closeCookies);
+
+
+//Carousel
+
+const flkty = new Flickity( '.carousel', {
+  wrapAround: true,
+  autoPlay: true
+});
+

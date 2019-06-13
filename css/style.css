@@ -337,10 +337,9 @@ template {
   display: none;
 }
 
-.mission-section .mission-description::before {
+.mission-section .mission-description::before, .clients-section .clients-description-wrapper::before {
   font-size: 61px;
   font-weight: 900;
-  font-family: 'Mada', sans-serif;
   position: absolute;
   top: -30px;
   left: 35px;
@@ -550,6 +549,95 @@ template {
   content: ",,";
 }
 
+.clients-section {
+  background-image: url("../images/clients-background.png");
+  padding-top: 100px;
+}
+
+.clients-section .section-title {
+  color: #fff;
+}
+
+.clients-section .image-wrapper {
+  position: relative;
+}
+
+.clients-section .image-wrapper .iPad {
+  transform: translateX(-20%);
+}
+
+.clients-section .image-wrapper .iPad-screen {
+  position: absolute;
+  top: 20px;
+  left: 52px;
+}
+
+.clients-section .clients-description-wrapper {
+  text-align: left;
+  font-weight: 300;
+  padding-left: 30px;
+  padding-top: 30px;
+}
+
+.clients-section .clients-description-wrapper::before {
+  content: ",,";
+  left: 0;
+}
+
+.clients-section .clients-description-wrapper .clients-description {
+  font-size: 30px;
+  line-height: 42px;
+}
+
+.clients-section .clients-description-wrapper .signature {
+  font-size: 22px;
+  line-height: 27px;
+}
+
+.clients-section .clients-description-wrapper .signature a {
+  color: #fff;
+}
+
+.clients-section .clients-description-wrapper .tags-wrapper {
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 40px;
+}
+
+.clients-section .clients-description-wrapper .tags-wrapper .tag {
+  font-size: 15px;
+  line-height: 18px;
+  color: #fff;
+  border: 1px solid #fff;
+  padding: 3px 8px;
+}
+
+.clients-section .clients-description-wrapper .tags-wrapper .tag:nth-child(2) {
+  margin: 0 3px;
+}
+
+/* Carousel */
+.carousel .carousel-cell {
+  width: 100%;
+}
+
+.flickity-page-dots .dot {
+  width: 15px;
+  height: 15px;
+  background-color: #fff;
+  opacity: 0.5;
+  margin-left: 6px;
+  margin-right: 6px;
+}
+
+.flickity-page-dots .dot.is-selected {
+  opacity: 1;
+}
+
+.flickity-button {
+  display: none;
+}
+
 *, *::before, *::after {
   box-sizing: border-box;
 }
@@ -562,6 +650,10 @@ body {
 section {
   text-align: center;
   padding-bottom: 160px;
+}
+
+a {
+  text-decoration: underline;
 }
 
 .main-btn {

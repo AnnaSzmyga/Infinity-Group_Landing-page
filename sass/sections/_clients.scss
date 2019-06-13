@@ -1,0 +1,91 @@
+.clients-section {
+    background-image: url("../images/clients-background.png");
+    padding-top: 100px;
+
+    .section-title {
+        color: #fff;
+    }
+
+    .image-wrapper {
+        position: relative;
+        .iPad {
+            transform: translateX(-20%);
+        }
+        .iPad-screen {
+            position: absolute;
+            top: 20px;
+            left: 52px;
+        }
+
+    }
+    .clients-description-wrapper {
+        text-align: left;
+        font-weight: 300;
+        padding-left: 30px;
+        padding-top: 30px;
+
+        &::before {
+            @extend %quotes;
+            content: ",,";
+            left: 0;
+
+        }
+
+        .clients-description {
+            font-size: 30px;    
+            line-height: 42px;
+        }
+
+        .signature {
+            font-size: 22px;    
+            line-height: 27px;
+
+            a {
+                color: #fff;
+            }
+        }
+
+        .tags-wrapper {
+            display: flex;
+            margin-top: 40px;
+
+            .tag {
+                font-size: 15px;    
+                line-height: 18px;
+                color: #fff;
+                border: 1px solid #fff;
+                padding: 3px 8px;
+
+                &:nth-child(2) {
+                    margin: 0 3px;
+                }
+            }
+        }
+    }
+}
+
+
+/* Carousel */
+
+.carousel {
+    .carousel-cell {
+        width: 100%;
+    }
+}
+
+.flickity-page-dots .dot {
+    width: 15px;
+    height: 15px;
+    background-color: #fff;
+    opacity: 0.5;
+    margin-left: 6px;
+    margin-right: 6px;
+}
+
+.flickity-page-dots .dot.is-selected {
+    opacity: 1;
+}
+
+.flickity-button {
+    display: none;
+}

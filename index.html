@@ -6,6 +6,7 @@
         <title>Infinity Group - Landing page</title>
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
         <link href="https://fonts.googleapis.com/css?family=Homenaje|Mada:300,400,900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="vendor/flickity.min.css" media="screen">
         <link rel="stylesheet" type="text/css" href="css/style.css">
     </head>
     <body>
@@ -14,12 +15,12 @@
                 <div class="container hero-container">
                     <nav class="navigation">    
                         <a href="#" class="brand-link">
-                            <img src="../images/logo.png" alt="logo">
+                            <img src="./images/logo.png" alt="logo">
                         </a>
                         <div class="menu-wrapper">
                             <ul class="menu">
                                 <li class="menu-item"><a href="#mission">Mission</a></li>
-                                <li class="menu-item"><a href="#">Clients</a></li>
+                                <li class="menu-item"><a href="#clients">Clients</a></li>
                                 <li class="menu-item"><a href="#">Products</a></li>
                                 <li class="menu-item"><a href="#">Contact</a></li>
                             </ul>
@@ -33,7 +34,7 @@
             </div> <!-- /.hero -->
             <div class="cookies">
                 <div class="container cookies-wrapper">
-                    <img src="../images/cookie-image.png" alt="cookie">
+                    <img src="./images/cookie-image.png" alt="cookie">
                     <p class="cookies-description">We use own and third party cookies to improve our services and show ads related to your preferences by analyzing our browser habits. If you continue browsing, we consider you accept its use. You can switch the configuration or learn more <a href="#">here</a></p>
                     <button class="main-btn">Close</button>
                 </div>
@@ -45,8 +46,83 @@
                 <p class="mission-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
             </div>   
         </section>
+        <section class="clients-section" id="clients">
+            <h1 class="section-title">Clients</h1>
+            <div class="container">
+                <div class="carousel">
+                    <div class="carousel-cell">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="image-wrapper">
+                                    <img  class="iPad" src="./images/iPad.png" alt="iPad">
+                                    <img class="iPad-screen" src="./images/iPad-screen.png" alt="iPad-screen">
+                                </div>   
+                            </div>
+                            <div class="col-md-8">
+                                <div class="clients-description-wrapper">    
+                                    <p class="clients-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                                    <p class="signature">Project Manager / <a href="https://www.infinity-group.pl/" target="_blank">Infinity-group.pl</a></p>
+                                    <div class="tags-wrapper">
+                                        <div class="tag">web design</div>
+                                        <div class="tag">usability</div>
+                                        <div class="tag">e-commerce</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-cell">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="image-wrapper">
+                                    <img  class="iPad" src="./images/iPad.png" alt="iPad">
+                                    <img class="iPad-screen" src="./images/iPad-screen.png" alt="iPad-screen">
+                                </div>   
+                            </div>
+                            <div class="col-md-8">
+                                <div class="clients-description-wrapper">    
+                                    <p class="clients-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                                    <p class="signature">Project Manager / <a href="https://www.infinity-group.pl/" target="_blank">Infinity-group.pl</a></p>
+                                    <div class="tags-wrapper">
+                                        <div class="tag">web design</div>
+                                        <div class="tag">usability</div>
+                                        <div class="tag">e-commerce</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-cell">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="image-wrapper">
+                                    <img  class="iPad" src="./images/iPad.png" alt="iPad">
+                                    <img class="iPad-screen" src="./images/iPad-screen.png" alt="iPad-screen">
+                                </div>   
+                            </div>
+                            <div class="col-md-8">
+                                <div class="clients-description-wrapper">    
+                                    <p class="clients-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                                    <p class="signature">Project Manager / <a href="https://www.infinity-group.pl/" target="_blank">Infinity-group.pl</a></p>
+                                    <div class="tags-wrapper">
+                                        <div class="tag">web design</div>
+                                        <div class="tag">usability</div>
+                                        <div class="tag">e-commerce</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+
+
+                
+            </div>
+        </section>
         
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        <script  src="vendor/flickity.pkgd.min.js"></script>
         <script src="js/script.js"></script>
     </body>
 </html>

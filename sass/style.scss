@@ -4,6 +4,8 @@
 
 @import "sections/header";
 @import "sections/mission";
+@import "sections/clients";
+
 
 *, *::before, *::after {
     box-sizing: border-box;
@@ -17,6 +19,10 @@ body {
 section {
     text-align: center;
     padding-bottom: 160px;
+}
+
+a {
+    text-decoration: underline;
 }
 
 .main-btn {
