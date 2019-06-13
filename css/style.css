@@ -464,11 +464,88 @@ template {
   color: #2d2d2d;
 }
 
+.header .cookies {
+  width: 100%;
+  padding: 20px 0;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(45, 45, 45, 0.85);
+}
+
+.header .cookies .cookies-wrapper {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  -ms-flex-align: center;
+      align-items: center;
+  padding: 0 30px;
+}
+
+.header .cookies .cookies-wrapper .cookies-description {
+  margin: 0;
+  padding: 0 30px;
+  font-size: 14px;
+  color: #fff;
+}
+
+.header .cookies .cookies-wrapper .cookies-description a {
+  color: #62c017;
+}
+
+.header .cookies .cookies-wrapper .main-btn {
+  padding-right: 35px;
+  position: relative;
+}
+
+.header .cookies .cookies-wrapper .main-btn::before, .header .cookies .cookies-wrapper .main-btn::after {
+  content: "";
+  display: block;
+  width: 13px;
+  height: 1px;
+  background-color: #fff;
+  position: absolute;
+  top: 50%;
+  right: 10px;
+}
+
+.header .cookies .cookies-wrapper .main-btn::before {
+  transform: rotate(45deg);
+}
+
+.header .cookies .cookies-wrapper .main-btn::after {
+  transform: rotate(-45deg);
+}
+
+.header .cookies.hidden {
+  display: none;
+}
+
 *, *::before, *::after {
   box-sizing: border-box;
 }
 
 body {
   font-family: 'Mada', sans-serif;
+}
+
+.main-btn {
+  font-size: 14px;
+  line-height: 14px;
+  font-weight: 300;
+  color: #fff;
+  text-transform: uppercase;
+  border-radius: 3px;
+  padding: 5px 10px;
+  outline: none;
+  border: 0;
+  transition: .3s;
+  cursor: pointer;
+  background-color: #62c017;
+}
+
+.main-btn:hover {
+  transform: scale(1.2);
 }
 /*# sourceMappingURL=style.css.map */

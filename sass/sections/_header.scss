@@ -112,4 +112,62 @@
             }
         }        
     }
+
+    .cookies {
+        width: 100%;
+        padding: 20px 0;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        background-color: rgba(45, 45, 45, .85);
+
+        .cookies-wrapper {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 30px;
+
+            .cookie-image-wrapper {
+
+            }
+
+            .cookies-description {
+                margin: 0;
+                padding: 0 30px;
+                font-size: 14px;
+                color: #fff;
+
+                a {
+                    color: $primary;
+                }
+            }
+
+            .main-btn {
+                padding-right: 35px;
+                position: relative;
+
+                &::before, &::after {
+                    content: "";
+                    display: block;
+                    width: 13px;
+                    height: 1px;
+                    background-color: #fff;
+                    position: absolute;
+                    top: 50%;
+                    right: 10px;
+                }
+                &::before {
+                    transform: rotate(45deg);
+                }
+                &::after {
+                    transform: rotate(-45deg);
+                }
+
+            }
+        }
+
+        &.hidden {
+            display: none;
+        }
+    }
 }
