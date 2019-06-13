@@ -1,0 +1,13 @@
+@import "normalize";
+@import "variables";
+
+@import "sections/header";
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Mada', sans-serif;
+}
+
