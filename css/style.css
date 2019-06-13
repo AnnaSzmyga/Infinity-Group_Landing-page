@@ -551,6 +551,8 @@ template {
 
 .clients-section {
   background-image: url("../images/clients-background.png");
+  background-size: cover;
+  background-repeat: no-repeat;
   padding-top: 100px;
 }
 
@@ -636,6 +638,59 @@ template {
 
 .flickity-button {
   display: none;
+}
+
+.products-section {
+  padding-top: 65px;
+}
+
+.products-section .products-section-description {
+  font-size: 22px;
+  line-height: 30px;
+  font-weight: 300;
+}
+
+.products-section .products-container {
+  margin-top: 90px;
+  padding-left: 85px;
+  padding-right: 85px;
+}
+
+.products-section .products-container .product-wrapper {
+  padding: 45px;
+  cursor: pointer;
+  position: relative;
+}
+
+.products-section .products-container .product-wrapper .product-details {
+  width: 100%;
+  padding: 45px 15px 10px 15px;
+  background-color: #62c017;
+  visibility: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: scaleY(0);
+  transition: .4s;
+  transform-origin: 50% 0;
+  z-index: 10;
+}
+
+.products-section .products-container .product-wrapper .product-details img {
+  text-align: center;
+  margin-bottom: 45px;
+}
+
+.products-section .products-container .product-wrapper .product-details .details-content {
+  text-align: left;
+  color: #fff;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.products-section .products-container .product-wrapper:hover .product-details {
+  visibility: visible;
+  transform: scaleY(1);
 }
 
 *, *::before, *::after {
