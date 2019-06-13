@@ -1,7 +1,9 @@
 @import "normalize";
 @import "variables";
+@import "placeholders";
 
 @import "sections/header";
+@import "sections/mission";
 
 *, *::before, *::after {
     box-sizing: border-box;
@@ -9,6 +11,12 @@
 
 body {
     font-family: 'Mada', sans-serif;
+    color: $text-color;
+}
+
+section {
+    text-align: center;
+    padding-bottom: 160px;
 }
 
 .main-btn {
@@ -29,4 +37,10 @@ body {
         transform: scale(1.2);
     }
 }
+
+.section-title {
+    font-family: 'Homenaje', sans-serif;
+    font-size: 50px;
+}
+
 

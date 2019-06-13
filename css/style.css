@@ -337,6 +337,15 @@ template {
   display: none;
 }
 
+.mission-section .mission-description::before {
+  font-size: 61px;
+  font-weight: 900;
+  font-family: 'Mada', sans-serif;
+  position: absolute;
+  top: -30px;
+  left: 35px;
+}
+
 .header {
   min-height: 100vh;
   background-image: url(../images/hero-background.png);
@@ -522,12 +531,37 @@ template {
   display: none;
 }
 
+.mission-section {
+  padding-top: 50px;
+}
+
+.mission-section .mission-description {
+  margin: 0;
+  text-align: left;
+  padding-left: 85px;
+  padding-right: 120px;
+  font-size: 22px;
+  font-weight: 300;
+  line-height: 40px;
+  position: relative;
+}
+
+.mission-section .mission-description::before {
+  content: ",,";
+}
+
 *, *::before, *::after {
   box-sizing: border-box;
 }
 
 body {
   font-family: 'Mada', sans-serif;
+  color: #2d2d2d;
+}
+
+section {
+  text-align: center;
+  padding-bottom: 160px;
 }
 
 .main-btn {
@@ -547,5 +581,10 @@ body {
 
 .main-btn:hover {
   transform: scale(1.2);
+}
+
+.section-title {
+  font-family: 'Homenaje', sans-serif;
+  font-size: 50px;
 }
 /*# sourceMappingURL=style.css.map */
