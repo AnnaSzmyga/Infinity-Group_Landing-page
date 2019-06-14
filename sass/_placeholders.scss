@@ -5,3 +5,20 @@
     top: -30px;
     left: 35px;
 }
+
+%main-btn {
+    font-size: 14px;
+    line-height: 14px;
+    font-weight: 300;
+    color: #fff;
+    border-radius: 3px;
+    outline: none;
+    border: 0;
+    transition: .3s;
+    cursor: pointer;
+    background-color: $primary;
+
+    &:hover {
+        transform: scale(1.2);
+    }
+}

@@ -1,0 +1,111 @@
+.contact-section {
+    padding-top: 55px;
+    text-align: left;
+    background-color: $contact-background-color;
+
+    .contact-btn {
+        @extend %main-btn;
+        font-family: 'Homenaje', sans-serif;
+        font-size: 22px;
+    }
+
+    .contact-heading-wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .contact-btn {
+            padding: 14px 55px 14px 18px;
+        }
+    }
+    .contact-container {
+        padding: 0 70px;
+
+        .contact-text {
+            font-size: 22px;
+            line-height: 30px;
+            font-weight: 300;
+            margin: 35px 0;
+
+            span {
+                font-weight: 400;
+            }
+        }
+
+        .contact-form {
+            text-align: center;
+            padding-top: 20px;
+
+            .form-line {
+                display: flex;
+                flex-wrap: wrap;
+
+                .form-item {
+                    flex: 20;
+                    margin-bottom: 10px;
+                    display: flex;
+
+                    &:last-child {
+                        flex: 23;
+                    }
+
+                    .message-text {
+                        font-size: 36px;
+                        font-weight: 300;
+                        line-height: 36px;
+                        margin: 0;
+                        white-space: nowrap;
+                    }
+                    .contact-input {
+                        display: block;
+                        flex-grow: 1;
+                        margin: 5px;
+                        padding: 0 8px;
+                        outline: none;
+                        border: none;
+                        border-bottom: 1px solid $text-color;
+                        background-color: $contact-background-color;
+
+                        &::placeholder {
+                            color: $text-color;
+                        }
+                    }
+                }  
+            }
+            .checkbox-wrapper {
+                margin-top: 30px;
+                display: flex;
+                align-items: center;
+                position: relative;
+
+                .checkbox {
+                    width: 20px;
+                    height: 20px;
+                    opacity: 0; 
+                }
+
+                &::before {
+                    content: "";
+                    display: block;
+                    width: 22px;
+                    height: 22px;
+                    border: 1px solid $text-color;
+                    background-color: #fff;
+                    position: absolute;
+                    top: 2px;
+                    left: 0;
+                }
+
+                .checkbox-description {
+                    font-size: 18px;
+                    font-weight: 300;
+                    margin: 0 15px;
+                }
+            }
+            .contact-btn {
+                padding: 14px 75px 14px 18px;
+                margin-top: 50px;
+            }    
+        }
+    }
+}

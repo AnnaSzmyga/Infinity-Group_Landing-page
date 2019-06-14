@@ -7,6 +7,7 @@
 @import "sections/clients";
 @import "sections/products";
 @import "sections/map";
+@import "sections/contact";
 
 
 *, *::before, *::after {
@@ -25,25 +26,6 @@ section {
 
 a {
     text-decoration: underline;
-}
-
-.main-btn {
-    font-size: 14px;
-    line-height: 14px;
-    font-weight: 300;
-    color: #fff;
-    text-transform: uppercase;
-    border-radius: 3px;
-    padding: 5px 10px;
-    outline: none;
-    border: 0;
-    transition: .3s;
-    cursor: pointer;
-    background-color: $primary;
-
-    &:hover {
-        transform: scale(1.2);
-    }
 }
 
 .section-title {
