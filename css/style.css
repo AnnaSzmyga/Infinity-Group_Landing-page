@@ -657,7 +657,13 @@ template {
 }
 
 .products-section .products-container .product-wrapper {
-  padding: 45px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+  padding: 45px 0;
   cursor: pointer;
   position: relative;
 }
@@ -667,6 +673,7 @@ template {
   padding: 45px 15px 10px 15px;
   background-color: #62c017;
   visibility: hidden;
+  opacity: 0;
   position: absolute;
   top: 0;
   left: 0;
@@ -690,7 +697,36 @@ template {
 
 .products-section .products-container .product-wrapper:hover .product-details {
   visibility: visible;
+  opacity: 1;
   transform: scaleY(1);
+}
+
+.map-section {
+  background: url("../images/map-with-marker.png") center right no-repeat #f1f1f1;
+  padding-top: 150px;
+  padding-bottom: 125px;
+  text-align: left;
+}
+
+.map-section .adress-wrapper {
+  padding: 20px 15px 15px 63px;
+  font-size: 22px;
+  line-height: 24px;
+  font-weight: 300;
+  display: inline-block;
+  background-color: rgba(241, 241, 241, 0.7);
+  border-radius: 5px;
+  position: relative;
+}
+
+.map-section .adress-wrapper .company-name {
+  font-weight: 400;
+}
+
+.map-section .adress-wrapper .compass {
+  position: absolute;
+  top: 15px;
+  left: 15px;
 }
 
 *, *::before, *::after {

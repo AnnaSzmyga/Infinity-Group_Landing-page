@@ -1,0 +1,27 @@
+.map-section {
+    background: url("../images/map-with-marker.png") center right no-repeat #f1f1f1;
+    padding-top: 150px;
+    padding-bottom: 125px;
+    text-align: left;
+
+    .adress-wrapper {
+        padding: 20px 15px 15px 63px;        
+        font-size: 22px;
+        line-height: 24px;
+        font-weight: 300;
+        display: inline-block;
+        background-color: rgba(241,241,241,0.7);
+        border-radius: 5px;
+        position: relative;
+
+        .company-name {
+            font-weight: 400;
+        }
+
+        .compass {
+            position: absolute;
+            top: 15px;
+            left: 15px;
+        }
+    }
+}
