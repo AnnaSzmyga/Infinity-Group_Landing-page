@@ -749,6 +749,7 @@ template {
 
 .contact-section {
   padding-top: 55px;
+  padding-bottom: 85px;
   text-align: left;
   background-color: #f9f9f9;
 }
@@ -756,6 +757,7 @@ template {
 .contact-section .contact-btn {
   font-family: 'Homenaje', sans-serif;
   font-size: 22px;
+  position: relative;
 }
 
 .contact-section .contact-heading-wrapper {
@@ -769,6 +771,30 @@ template {
 
 .contact-section .contact-heading-wrapper .contact-btn {
   padding: 14px 55px 14px 18px;
+}
+
+.contact-section .contact-heading-wrapper .contact-btn::before, .contact-section .contact-heading-wrapper .contact-btn::after {
+  display: block;
+  content: "";
+  position: absolute;
+}
+
+.contact-section .contact-heading-wrapper .contact-btn::before {
+  width: 1px;
+  height: 12px;
+  background-color: #fff;
+  top: 16px;
+  right: 23px;
+}
+
+.contact-section .contact-heading-wrapper .contact-btn::after {
+  width: 6px;
+  height: 6px;
+  border-top: 1px solid #fff;
+  border-right: 1px solid #fff;
+  top: 15px;
+  right: 20px;
+  transform: rotate(-45deg);
 }
 
 .contact-section .contact-container {
@@ -843,8 +869,8 @@ template {
   margin-top: 30px;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-align: center;
-      align-items: center;
+  -ms-flex-align: start;
+      align-items: flex-start;
   position: relative;
 }
 
@@ -852,7 +878,7 @@ template {
   width: 20px;
   height: 20px;
   position: absolute;
-  top: 3px;
+  top: 2px;
   left: 0;
   opacity: 0;
 }
@@ -860,9 +886,12 @@ template {
 .contact-section .contact-container .contact-form .checkbox-wrapper .checkbox + .checkbox-icon {
   height: 20px;
   width: 20px;
+  margin-top: 2px;
   border: 1px solid #b3b7b4;
   background-color: #fff;
   text-align: center;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
 }
 
 .contact-section .contact-container .contact-form .checkbox-wrapper .checkbox + .checkbox-icon .fa-check {
@@ -885,11 +914,45 @@ template {
   font-size: 18px;
   font-weight: 300;
   margin: 0 15px;
+  text-align: left;
 }
 
 .contact-section .contact-container .contact-form .contact-btn {
   padding: 14px 75px 14px 18px;
   margin-top: 50px;
+}
+
+.contact-section .contact-container .contact-form .contact-btn::before, .contact-section .contact-container .contact-form .contact-btn::after {
+  display: block;
+  content: "";
+  position: absolute;
+}
+
+.contact-section .contact-container .contact-form .contact-btn::before {
+  width: 12px;
+  height: 1px;
+  background-color: #fff;
+  top: 50%;
+  right: 23px;
+}
+
+.contact-section .contact-container .contact-form .contact-btn::after {
+  width: 6px;
+  height: 6px;
+  border-top: 1px solid #fff;
+  border-right: 1px solid #fff;
+  top: 50%;
+  right: 25px;
+  transform: rotate(45deg) translateY(-60%);
+}
+
+.footer {
+  background-color: #242424;
+  color: #8f8f8f;
+  font-size: 12px;
+  line-height: 19px;
+  font-weight: 300;
+  padding: 30px 0 14px 0;
 }
 
 *, *::before, *::after {

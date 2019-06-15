@@ -1,5 +1,6 @@
 .contact-section {
     padding-top: 55px;
+    padding-bottom: 85px;
     text-align: left;
     background-color: $contact-background-color;
 
@@ -7,6 +8,7 @@
         @extend %main-btn;
         font-family: 'Homenaje', sans-serif;
         font-size: 22px;
+        position: relative;
     }
 
     .contact-heading-wrapper {
@@ -16,6 +18,28 @@
 
         .contact-btn {
             padding: 14px 55px 14px 18px;
+
+            &::before, &::after {
+                display: block;
+                content: "";
+                position: absolute;
+            }
+            &::before {
+                width: 1px;
+                height: 12px;
+                background-color: #fff;
+                top: 16px;
+                right: 23px;
+            }
+            &::after {
+                width: 6px;
+                height: 6px;
+                border-top: 1px solid #fff;
+                border-right: 1px solid #fff;
+                top: 15px;
+                right: 20px;
+                transform: rotate(-45deg);
+            }
         }
     }
     .contact-container {
@@ -75,23 +99,25 @@
             .checkbox-wrapper {
                 margin-top: 30px;
                 display: flex;
-                align-items: center;
+                align-items: flex-start;
                 position: relative;
 
                 .checkbox {
                     width: 20px;
                     height: 20px;
                     position: absolute;
-                    top: 3px;
+                    top: 2px;
                     left: 0;
                     opacity: 0;
 
                     + .checkbox-icon {
                         height: 20px;
                         width: 20px;
+                        margin-top: 2px;
                         border: 1px solid #b3b7b4;
                         background-color: #fff;
                         text-align: center;
+                        flex-shrink: 0;
                         
                         .fa-check {
                             display: none;
@@ -114,11 +140,34 @@
                     font-size: 18px;
                     font-weight: 300;
                     margin: 0 15px;
+                    text-align: left;
                 }
             }
             .contact-btn {
                 padding: 14px 75px 14px 18px;
                 margin-top: 50px;
+
+                &::before, &::after {
+                    display: block;
+                    content: "";
+                    position: absolute;
+                }
+                &::before {
+                    width: 12px;
+                    height: 1px;
+                    background-color: #fff;
+                    top: 50%;
+                    right: 23px;
+                }
+                &::after {
+                    width: 6px;
+                    height: 6px;
+                    border-top: 1px solid #fff;
+                    border-right: 1px solid #fff;
+                    top: 50%;
+                    right: 25px;
+                    transform: rotate(45deg) translateY(-60%);
+                }
             }    
         }
     }
