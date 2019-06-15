@@ -851,19 +851,34 @@ template {
 .contact-section .contact-container .contact-form .checkbox-wrapper .checkbox {
   width: 20px;
   height: 20px;
+  position: absolute;
+  top: 3px;
+  left: 0;
   opacity: 0;
 }
 
-.contact-section .contact-container .contact-form .checkbox-wrapper::before {
-  content: "";
-  display: block;
-  width: 22px;
-  height: 22px;
-  border: 1px solid #2d2d2d;
+.contact-section .contact-container .contact-form .checkbox-wrapper .checkbox + .checkbox-icon {
+  height: 20px;
+  width: 20px;
+  border: 1px solid #b3b7b4;
   background-color: #fff;
-  position: absolute;
-  top: 2px;
-  left: 0;
+  text-align: center;
+}
+
+.contact-section .contact-container .contact-form .checkbox-wrapper .checkbox + .checkbox-icon .fa-check {
+  display: none;
+  color: #fff;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.contact-section .contact-container .contact-form .checkbox-wrapper .checkbox:checked + .checkbox-icon {
+  background-color: #62c017;
+  border-color: #62c017;
+}
+
+.contact-section .contact-container .contact-form .checkbox-wrapper .checkbox:checked + .checkbox-icon .fa-check {
+  display: block;
 }
 
 .contact-section .contact-container .contact-form .checkbox-wrapper .checkbox-description {

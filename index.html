@@ -6,6 +6,7 @@
         <title>Infinity Group - Landing page</title>
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
         <link href="https://fonts.googleapis.com/css?family=Homenaje|Mada:300,400,700,900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
         <link rel="stylesheet" href="vendor/flickity.min.css" media="screen">
         <link rel="stylesheet" type="text/css" href="css/style.css">
     </head>
@@ -258,27 +259,28 @@
                         <div class="form-line">
                             <div class="form-item">
                                 <p class="message-text">Hello! I'm</p>
-                                <input class="contact-input" type="text" placeholder="Your Name">
+                                <input class="contact-input" type="text" name="name" placeholder="Your Name">
                             </div>
                             <div class="form-item">
                                 <p class="message-text">and I represent</p>
-                                <input class="contact-input" type="text" placeholder="Company name">
+                                <input class="contact-input" type="text" name="company-name" placeholder="Company name">
                                 <p class="message-text">.</p>
                             </div>
                         </div>
                         <div class="form-line">
                             <div class="form-item">
                                 <p class="message-text">Call me at</p> 
-                                <input class="contact-input" type="text" placeholder="Your telephone number">
+                                <input class="contact-input" type="tel" name="telephone" placeholder="Your telephone number">
                             </div>
                             <div class="form-item">
                                 <p class="message-text">or send an email to</p>
-                                <input class="contact-input" type="email" placeholder="Your email adress">
+                                <input class="contact-input" type="email" name="email" placeholder="Your email adress">
                                 <p class="message-text">.</p>
                             </div>
                         </div>                       
                         <div class="checkbox-wrapper">
                             <input class="checkbox" type="checkbox">
+                            <div class="checkbox-icon"><i class="fas fa-check"></i></div>
                             <label class="checkbox-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</label>
                         </div>
                         <button class="contact-btn" type="submit">send details</button> 

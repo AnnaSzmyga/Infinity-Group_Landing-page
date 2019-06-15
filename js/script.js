@@ -1,7 +1,7 @@
 // Cookies closing
 
 const cookies = document.querySelector('.cookies');
-const cookiesButton = document.querySelector('.cookies .main-btn');
+const cookiesButton = document.querySelector('.cookies-btn');
 
 closeCookies = () => {
     console.log(cookiesButton);
