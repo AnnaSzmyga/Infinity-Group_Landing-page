@@ -10,6 +10,9 @@
 @import "sections/contact";
 @import "sections/footer";
 
+html {
+    scroll-behavior: smooth;
+}
 
 *, *::before, *::after {
     box-sizing: border-box;
@@ -32,6 +35,12 @@ a {
 .section-title {
     font-family: 'Homenaje', sans-serif;
     font-size: 50px;
+}
+
+
+/* remove Bootstrap styles*/
+.container {
+    max-width: 1140px;
 }
 
 
