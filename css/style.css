@@ -529,6 +529,13 @@ template {
   }
 }
 
+@media (max-width: 360px) {
+  .header .hero .hero-container .navigation .menu-wrapper .menu .menu-item {
+    margin-top: 0;
+    padding-bottom: 0;
+  }
+}
+
 .header .hero .hero-container .navigation .menu-wrapper .menu .menu-item:last-child {
   border-right: none;
 }
@@ -575,6 +582,12 @@ template {
   text-align: center;
 }
 
+@media (max-width: 360px) {
+  .header .hero .hero-container .hero-heading-wrapper {
+    top: calc(60% - 95px);
+  }
+}
+
 .header .hero .hero-container .hero-heading-wrapper h1 {
   font-family: 'Homenaje', sans-serif;
   font-size: 58px;
@@ -597,6 +610,12 @@ template {
   background-color: rgba(45, 45, 45, 0.85);
 }
 
+@media (max-width: 360px) {
+  .header .cookies {
+    padding: 10px 0;
+  }
+}
+
 .header .cookies .cookies-wrapper {
   display: -ms-flexbox;
   display: flex;
@@ -611,6 +630,12 @@ template {
   .header .cookies .cookies-wrapper {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 360px) {
+  .header .cookies .cookies-wrapper {
+    padding: 0 15px;
   }
 }
 
@@ -704,8 +729,20 @@ template {
   }
 }
 
+@media (max-width: 767px) {
+  .mission-section .mission-description {
+    padding-left: 40px;
+  }
+}
+
 .mission-section .mission-description::before {
   content: ",,";
+}
+
+@media (max-width: 767px) {
+  .mission-section .mission-description::before {
+    left: 0;
+  }
 }
 
 .clients-section {
@@ -724,6 +761,12 @@ template {
 
 .clients-section .section-title {
   color: #fff;
+}
+
+@media (max-width: 575px) {
+  .clients-section .section-title {
+    margin-bottom: 0;
+  }
 }
 
 .clients-section .image-wrapper {
@@ -792,9 +835,21 @@ template {
   line-height: 42px;
 }
 
+@media (max-width: 575px) {
+  .clients-section .clients-description-wrapper .clients-description {
+    font-size: 24px;
+  }
+}
+
 .clients-section .clients-description-wrapper .signature {
   font-size: 22px;
   line-height: 27px;
+}
+
+@media (max-width: 575px) {
+  .clients-section .clients-description-wrapper .signature {
+    font-size: 18px;
+  }
 }
 
 .clients-section .clients-description-wrapper .signature a {
@@ -805,6 +860,8 @@ template {
   display: -ms-flexbox;
   display: flex;
   margin-top: 40px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .clients-section .clients-description-wrapper .tags-wrapper .tag {
@@ -813,10 +870,11 @@ template {
   color: #fff;
   border: 1px solid #fff;
   padding: 3px 8px;
+  margin-bottom: 3px;
 }
 
 .clients-section .clients-description-wrapper .tags-wrapper .tag:nth-child(2) {
-  margin: 0 3px;
+  margin: 0 3px 3px 3px;
 }
 
 /* Carousel */
@@ -851,6 +909,13 @@ template {
   padding-top: 65px;
 }
 
+@media (max-width: 575px) {
+  .products-section {
+    padding-top: 40px;
+    padding-bottom: 90px;
+  }
+}
+
 .products-section .products-section-description {
   font-size: 22px;
   line-height: 30px;
@@ -861,6 +926,14 @@ template {
   margin-top: 90px;
   padding-left: 85px;
   padding-right: 85px;
+}
+
+@media (max-width: 575px) {
+  .products-section .products-container {
+    padding-left: 60px;
+    padding-right: 60px;
+    margin-top: 50px;
+  }
 }
 
 .products-section .products-container .product-wrapper {
@@ -1204,10 +1277,6 @@ template {
   line-height: 19px;
   font-weight: 300;
   padding: 30px 0 14px 0;
-}
-
-html {
-  scroll-behavior: smooth;
 }
 
 *, *::before, *::after {

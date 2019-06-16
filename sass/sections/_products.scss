@@ -1,5 +1,9 @@
 .products-section {
     padding-top: 65px;
+    @media (max-width: 575px) {
+        padding-top: 40px;
+        padding-bottom: 90px;
+    }
 
     .products-section-description {
         font-size: 22px;
@@ -11,6 +15,12 @@
         margin-top: 90px;
         padding-left: 85px;
         padding-right: 85px;
+
+        @media (max-width: 575px) {
+            padding-left: 60px;
+            padding-right: 60px;
+            margin-top: 50px;
+        }
 
         .product-wrapper {
             display: flex;

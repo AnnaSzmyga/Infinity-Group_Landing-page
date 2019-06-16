@@ -1,5 +1,6 @@
 .mission-section {
     padding-top: 50px;
+    
     @media (max-width: 767px) {
         padding-bottom: 80px;
     }
@@ -17,10 +18,17 @@
         @media (max-width: 767px) {
             padding-right: 0;
         }
+        @media (max-width: 767px) {
+            padding-left: 40px;
+        }
 
         &::before {
             @extend %quotes;
             content: ",,";
+
+            @media (max-width: 767px) {
+                left: 0;
+            }
         }
     }
 }

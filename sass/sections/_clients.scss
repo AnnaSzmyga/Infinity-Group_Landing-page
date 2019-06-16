@@ -11,6 +11,10 @@
 
     .section-title {
         color: #fff;
+
+        @media (max-width: 575px) {
+            margin-bottom: 0;
+        }
     }
 
     .image-wrapper {
@@ -62,11 +66,19 @@
         .clients-description {
             font-size: 30px;    
             line-height: 42px;
+
+            @media (max-width: 575px) {
+                font-size: 24px;
+            }
         }
 
         .signature {
             font-size: 22px;    
             line-height: 27px;
+
+            @media (max-width: 575px) {
+                font-size: 18px;
+            }
 
             a {
                 color: #fff;
@@ -76,6 +88,7 @@
         .tags-wrapper {
             display: flex;
             margin-top: 40px;
+            flex-wrap: wrap;
 
             .tag {
                 font-size: 15px;    
@@ -83,9 +96,10 @@
                 color: #fff;
                 border: 1px solid #fff;
                 padding: 3px 8px;
+                margin-bottom: 3px;
 
                 &:nth-child(2) {
-                    margin: 0 3px;
+                    margin: 0 3px 3px 3px;
                 }
             }
         }
