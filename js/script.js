@@ -1,10 +1,24 @@
+// Mobile navigation
+
+const mobileMenuButton = document.querySelector('.mobile-menu-btn');
+const hamburgerIcon = document.querySelector('.hamburger-icon');
+const menu = document.querySelector('.menu');
+
+showMenu = () => {
+    menu.classList.toggle('show');
+};
+
+mobileMenuButton.addEventListener('click', showMenu);
+hamburgerIcon.addEventListener('click', showMenu);
+
+
+
 // Cookies closing
 
 const cookies = document.querySelector('.cookies');
 const cookiesButton = document.querySelector('.cookies-btn');
 
 closeCookies = () => {
-    console.log(cookiesButton);
     cookies.classList.add('hidden');
 };
 

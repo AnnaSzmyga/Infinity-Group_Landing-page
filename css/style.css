@@ -434,6 +434,7 @@ template {
   left: 50%;
   transform: translateX(-50%);
   display: none;
+  cursor: pointer;
 }
 
 @media (max-width: 767px) {
@@ -497,12 +498,21 @@ template {
       justify-content: space-between;
   -ms-flex-align: center;
       align-items: center;
+  transition: .3s;
 }
 
 @media (max-width: 767px) {
   .header .hero .hero-container .navigation .menu-wrapper .menu {
     -ms-flex-direction: column;
         flex-direction: column;
+    visibility: hidden;
+    opacity: 0;
+    margin-right: 20px;
+  }
+  .header .hero .hero-container .navigation .menu-wrapper .menu.show {
+    visibility: visible;
+    opacity: 1;
+    margin-right: 0;
   }
 }
 
