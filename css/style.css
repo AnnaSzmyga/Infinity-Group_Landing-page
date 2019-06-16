@@ -481,7 +481,7 @@ template {
       align-items: center;
 }
 
-@media (min-width: 768px) {
+@media (max-width: 768px) {
   .header .hero .hero-container .navigation .menu-wrapper {
     -ms-flex-pack: end;
         justify-content: flex-end;
@@ -681,6 +681,12 @@ template {
   padding-top: 50px;
 }
 
+@media (max-width: 767px) {
+  .mission-section {
+    padding-bottom: 80px;
+  }
+}
+
 .mission-section .mission-description {
   margin: 0;
   text-align: left;
@@ -690,6 +696,12 @@ template {
   font-weight: 300;
   line-height: 40px;
   position: relative;
+}
+
+@media (max-width: 767px) {
+  .mission-section .mission-description {
+    padding-right: 0;
+  }
 }
 
 .mission-section .mission-description::before {
@@ -703,6 +715,13 @@ template {
   padding-top: 100px;
 }
 
+@media (max-width: 767px) {
+  .clients-section {
+    padding-top: 50px;
+    padding-bottom: 100px;
+  }
+}
+
 .clients-section .section-title {
   color: #fff;
 }
@@ -711,14 +730,40 @@ template {
   position: relative;
 }
 
+@media (max-width: 991px) {
+  .clients-section .image-wrapper {
+    width: 300px;
+    padding-top: 80px;
+  }
+}
+
+@media (max-width: 767px) {
+  .clients-section .image-wrapper {
+    margin: 0 auto;
+  }
+}
+
 .clients-section .image-wrapper .iPad {
   transform: translateX(-20%);
+}
+
+@media (max-width: 991px) {
+  .clients-section .image-wrapper .iPad {
+    width: 85%;
+  }
 }
 
 .clients-section .image-wrapper .iPad-screen {
   position: absolute;
   top: 20px;
   left: 52px;
+}
+
+@media (max-width: 991px) {
+  .clients-section .image-wrapper .iPad-screen {
+    width: 52%;
+    top: 92px;
+  }
 }
 
 .clients-section .clients-description-wrapper {
@@ -731,6 +776,15 @@ template {
 .clients-section .clients-description-wrapper::before {
   content: ",,";
   left: 0;
+}
+
+@media (max-width: 767px) {
+  .clients-section .clients-description-wrapper {
+    padding-left: 50px;
+  }
+  .clients-section .clients-description-wrapper::before {
+    left: 20px;
+  }
 }
 
 .clients-section .clients-description-wrapper .clients-description {
@@ -785,6 +839,12 @@ template {
 
 .flickity-button {
   display: none;
+}
+
+@media (max-width: 767px) {
+  .flickity-page-dots {
+    bottom: -40px;
+  }
 }
 
 .products-section {

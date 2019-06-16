@@ -4,21 +4,41 @@
     background-repeat: no-repeat;
     padding-top: 100px;
 
+    @media (max-width: 767px) {
+        padding-top: 50px;
+        padding-bottom: 100px;
+    }
+
     .section-title {
         color: #fff;
     }
 
     .image-wrapper {
         position: relative;
+
+        @media (max-width: 991px) {
+            width: 300px;
+            padding-top: 80px;
+        }
+        @media (max-width: 767px) {
+            margin: 0 auto;
+        }
+
         .iPad {
             transform: translateX(-20%);
+            @media (max-width: 991px) {
+                width: 85%;
+            }
         }
         .iPad-screen {
             position: absolute;
             top: 20px;
             left: 52px;
+            @media (max-width: 991px) {
+                width: 52%;
+                top: 92px;
+            }
         }
-
     }
     .clients-description-wrapper {
         text-align: left;
@@ -30,7 +50,13 @@
             @extend %quotes;
             content: ",,";
             left: 0;
+        }
 
+        @media (max-width: 767px) {
+            padding-left: 50px;
+            &::before {
+                left: 20px;
+            }
         }
 
         .clients-description {
@@ -90,4 +116,10 @@
 
 .flickity-button {
     display: none;
+}
+
+@media (max-width: 767px) {
+    .flickity-page-dots {
+        bottom: -40px;
+    }
 }

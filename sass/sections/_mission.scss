@@ -1,5 +1,8 @@
 .mission-section {
     padding-top: 50px;
+    @media (max-width: 767px) {
+        padding-bottom: 80px;
+    }
 
     .mission-description {
         margin: 0;
@@ -10,6 +13,10 @@
         font-weight: 300;
         line-height: 40px;
         position: relative;
+
+        @media (max-width: 767px) {
+            padding-right: 0;
+        }
 
         &::before {
             @extend %quotes;
