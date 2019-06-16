@@ -16,6 +16,10 @@
         justify-content: space-between;
         align-items: center;
 
+        @media(max-width: 575px) {
+            flex-direction: column;
+        }
+
         .contact-btn {
             padding: 14px 55px 14px 18px;
 
@@ -42,8 +46,13 @@
             }
         }
     }
+    
     .contact-container {
         padding: 0 70px;
+
+        @media(max-width: 575px) {
+            padding: 0;
+        }
 
         .contact-text {
             font-size: 22px;
@@ -63,11 +72,19 @@
             .form-line {
                 display: flex;
                 flex-wrap: wrap;
+                @media(max-width: 575px) {
+                    flex-direction: column;
+                }
 
                 .form-item {
                     flex: 20;
                     margin-bottom: 10px;
                     display: flex;
+
+                    @media(max-width: 575px) {
+                        flex-direction: column;
+                        align-items: flex-start;
+                    }
 
                     &:last-child {
                         flex: 23;
@@ -79,6 +96,10 @@
                         line-height: 36px;
                         margin: 0;
                         white-space: nowrap;
+
+                        @media(max-width: 575px) {
+                            margin: 15px 0 10px 0;
+                        }
                     }
                     .contact-input {
                         display: block;
@@ -89,6 +110,12 @@
                         border: none;
                         border-bottom: 1px solid $text-color;
                         background-color: $contact-background-color;
+
+                        @media(max-width: 575px) {
+                            width: 100%;
+                            margin: 0;
+                            padding: 8px;
+                        }
 
                         &::placeholder {
                             color: $text-color;

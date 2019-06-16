@@ -977,6 +977,13 @@ template {
       align-items: center;
 }
 
+@media (max-width: 575px) {
+  .contact-section .contact-heading-wrapper {
+    -ms-flex-direction: column;
+        flex-direction: column;
+  }
+}
+
 .contact-section .contact-heading-wrapper .contact-btn {
   padding: 14px 55px 14px 18px;
 }
@@ -1009,6 +1016,12 @@ template {
   padding: 0 70px;
 }
 
+@media (max-width: 575px) {
+  .contact-section .contact-container {
+    padding: 0;
+  }
+}
+
 .contact-section .contact-container .contact-text {
   font-size: 22px;
   line-height: 30px;
@@ -1032,12 +1045,28 @@ template {
       flex-wrap: wrap;
 }
 
+@media (max-width: 575px) {
+  .contact-section .contact-container .contact-form .form-line {
+    -ms-flex-direction: column;
+        flex-direction: column;
+  }
+}
+
 .contact-section .contact-container .contact-form .form-line .form-item {
   -ms-flex: 20;
       flex: 20;
   margin-bottom: 10px;
   display: -ms-flexbox;
   display: flex;
+}
+
+@media (max-width: 575px) {
+  .contact-section .contact-container .contact-form .form-line .form-item {
+    -ms-flex-direction: column;
+        flex-direction: column;
+    -ms-flex-align: start;
+        align-items: flex-start;
+  }
 }
 
 .contact-section .contact-container .contact-form .form-line .form-item:last-child {
@@ -1053,6 +1082,12 @@ template {
   white-space: nowrap;
 }
 
+@media (max-width: 575px) {
+  .contact-section .contact-container .contact-form .form-line .form-item .message-text {
+    margin: 15px 0 10px 0;
+  }
+}
+
 .contact-section .contact-container .contact-form .form-line .form-item .contact-input {
   display: block;
   -ms-flex-positive: 1;
@@ -1063,6 +1098,14 @@ template {
   border: none;
   border-bottom: 1px solid #2d2d2d;
   background-color: #f9f9f9;
+}
+
+@media (max-width: 575px) {
+  .contact-section .contact-container .contact-form .form-line .form-item .contact-input {
+    width: 100%;
+    margin: 0;
+    padding: 8px;
+  }
 }
 
 .contact-section .contact-container .contact-form .form-line .form-item .contact-input:-ms-input-placeholder {
