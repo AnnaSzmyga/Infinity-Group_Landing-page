@@ -102,7 +102,9 @@
                     height: 100%;
                     display: flex;
                     align-items: center;
-
+                    @media (min-width: 768px) {
+                        justify-content: flex-end;
+                    }
                     
                     .menu {
                         height: 100%;
@@ -205,12 +207,31 @@
             justify-content: space-between;
             align-items: center;
             padding: 0 30px;
+            @media (max-width: 767px) {
+                flex-wrap: wrap;
+            }
+
+            .cookie-image {
+                display: inline-block;
+                width: 50px;
+                flex-shrink: 0;
+
+                @media (max-width: 767px) {
+                    width: 30px;
+                }
+            }
 
             .cookies-description {
                 margin: 0;
                 padding: 0 30px;
                 font-size: 14px;
                 color: #fff;
+                @media (max-width: 767px) {
+                    font-size: 10px;
+                    padding: 0;
+                    padding-top: 10px;
+                    order: 1;
+                }
 
                 a {
                     color: $primary;
@@ -221,7 +242,7 @@
                 @extend %main-btn;
                 padding: 5px 35px 5px 10px;
                 text-transform: uppercase;
-                position: relative;
+                position: relative;                
 
                 &::before, &::after {
                     content: "";
