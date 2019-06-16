@@ -4,7 +4,15 @@
     padding-bottom: 125px;
     text-align: left;
 
+    @media (max-width: 575px) {
+        background-position: 60% 0%;
+    }
+    @media (min-width: 576px) and (max-width: 767px) {
+        background-position: 80% 0%;
+    }
+
     .adress-wrapper {
+        max-width: 350px;
         padding: 20px 15px 15px 63px;        
         font-size: 22px;
         line-height: 24px;
@@ -13,6 +21,10 @@
         background-color: rgba(241,241,241,0.9);
         border-radius: 5px;
         position: relative;
+
+        @media (max-width: 575px) {
+            max-width: 300px;
+        }
 
         .company-name {
             font-weight: 400;
