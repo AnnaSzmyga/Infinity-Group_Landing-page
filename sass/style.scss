@@ -23,10 +23,29 @@ body {
 section {
     text-align: center;
     padding-bottom: 160px;
+    position: relative;
+
+    .section-number {
+        width: 110px;
+        height: 60px;
+        color: $text-color;
+        font-family: 'Homenaje', sans-serif;
+        font-size: 19px;
+        text-align: center;
+        border-bottom: 2px solid $darkgrey;
+        position: absolute;
+        right: 0;
+        top: 35%;
+
+        @media (max-width: 1199px) {
+            display: none;
+        }
+    }
 }
 
-a {
-    text-decoration: underline;
+/* change Bootstrap's container styles*/
+.container {
+    max-width: 1140px;
 }
 
 .section-title {
@@ -34,11 +53,57 @@ a {
     font-size: 50px;
 }
 
-
-/* remove Bootstrap styles*/
-.container {
-    max-width: 1140px;
+a {
+    text-decoration: underline;
 }
+
+.jump-to {
+    position: fixed;
+    right: 0;
+    top: 50%;
+    width: 110px;
+    height: 150px;
+    display: none;
+
+    @media (max-width: 1199px) {
+        visibility: hidden;
+    }
+
+    .jump-up, .jump-down {
+        position: relative;
+        display: block;
+        width: 100%;
+        height: 50%;
+    }
+    .arrow {
+        content: "";
+        display: block;
+        width: 20px;
+        height: 20px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%) rotate(-45deg);
+        position: absolute;
+    }
+
+    .jump-up {
+        border-bottom: 1px solid $darkgrey;
+
+        &::after {
+            @extend .arrow;
+            border-top: 1px solid $darkgrey;
+            border-right: 1px solid $darkgrey;
+        }
+    }
+    .jump-down {
+        &::after {
+            @extend .arrow;
+            border-bottom: 1px solid $darkgrey;
+            border-left: 1px solid $darkgrey;
+        }
+    }
+}
+
 
 
 

@@ -887,6 +887,10 @@ template {
   margin: 0 3px 3px 3px;
 }
 
+.clients-section .section-number {
+  color: #fff;
+}
+
 /* Carousel */
 .carousel .carousel-cell {
   width: 100%;
@@ -1301,10 +1305,31 @@ body {
 section {
   text-align: center;
   padding-bottom: 160px;
+  position: relative;
 }
 
-a {
-  text-decoration: underline;
+section .section-number {
+  width: 110px;
+  height: 60px;
+  color: #2d2d2d;
+  font-family: 'Homenaje', sans-serif;
+  font-size: 19px;
+  text-align: center;
+  border-bottom: 2px solid #b3b7b4;
+  position: absolute;
+  right: 0;
+  top: 35%;
+}
+
+@media (max-width: 1199px) {
+  section .section-number {
+    display: none;
+  }
+}
+
+/* change Bootstrap's container styles*/
+.container {
+  max-width: 1140px;
 }
 
 .section-title {
@@ -1312,8 +1337,54 @@ a {
   font-size: 50px;
 }
 
-/* remove Bootstrap styles*/
-.container {
-  max-width: 1140px;
+a {
+  text-decoration: underline;
+}
+
+.jump-to {
+  position: fixed;
+  right: 0;
+  top: 50%;
+  width: 110px;
+  height: 150px;
+  display: none;
+}
+
+@media (max-width: 1199px) {
+  .jump-to {
+    visibility: hidden;
+  }
+}
+
+.jump-to .jump-up, .jump-to .jump-down {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 50%;
+}
+
+.jump-to .arrow, .jump-to .jump-up::after, .jump-to .jump-down::after {
+  content: "";
+  display: block;
+  width: 20px;
+  height: 20px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(-45deg);
+  position: absolute;
+}
+
+.jump-to .jump-up {
+  border-bottom: 1px solid #b3b7b4;
+}
+
+.jump-to .jump-up::after {
+  border-top: 1px solid #b3b7b4;
+  border-right: 1px solid #b3b7b4;
+}
+
+.jump-to .jump-down::after {
+  border-bottom: 1px solid #b3b7b4;
+  border-left: 1px solid #b3b7b4;
 }
 /*# sourceMappingURL=style.css.map */
