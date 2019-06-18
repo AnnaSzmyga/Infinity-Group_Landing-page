@@ -40,7 +40,6 @@ const flkty = new Flickity( '.carousel', {
 
 window.onscroll = function() {showJumpToOnScroll()};
 const headerHeight = document.querySelector('.header').offsetHeight;
-console.log(0.5 * headerHeight);
 
 showJumpToOnScroll = () => {    
     if (document.documentElement.scrollTop > (0.5 * headerHeight)) {
