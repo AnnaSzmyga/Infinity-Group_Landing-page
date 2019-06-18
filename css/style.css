@@ -1298,6 +1298,10 @@ template {
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: 'Mada', sans-serif;
   color: #2d2d2d;
