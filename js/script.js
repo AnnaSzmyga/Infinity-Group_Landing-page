@@ -39,11 +39,11 @@ const flkty = new Flickity( '.carousel', {
 //Show Jump-to buttons on scroll:
 
 window.onscroll = function() {showJumpToOnScroll()};
+const headerHeight = document.querySelector('.header').offsetHeight;
+console.log(0.5 * headerHeight);
 
-showJumpToOnScroll = () => {
-    const headerHeight = document.querySelector('.header').offsetHeight;
-
-    if (document.body.scrollTop > headerHeight || document.documentElement.scrollTop > headerHeight) {
+showJumpToOnScroll = () => {    
+    if (document.documentElement.scrollTop > (0.5 * headerHeight)) {
         document.querySelector('.jump-to').style.display = "block";
     } else {
         document.querySelector('.jump-to').style.display = "none";
