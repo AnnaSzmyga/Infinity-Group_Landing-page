@@ -5,7 +5,7 @@
     background-size: cover;
     position: relative;
 
-    &::before {        
+    &::before {
         content: "";
         display: block;
         width: 100%;
@@ -25,14 +25,14 @@
         left: 0;
         background-image: url(../images/hero-background-layer.png);
 
-        
+
         .hero-container {
             height: 100%;
 
             .navigation {
                 height: 95px;
                 position: relative;
-                
+
                 .mobile-menu {
                     position: absolute;
                     top: 0;
@@ -48,7 +48,7 @@
                         border-radius: 0;
                         padding-top: 45px;
                         position: relative;
-                        
+
                         &:hover {
                             transform: none;
                         }
@@ -79,15 +79,15 @@
                         }
 
                     }
-                    
+
                     .brand-link-wrapper {
                         width: 95px;
                         height: 95px;
-                        
+
                         .brand-link {
                             width: 100%;
                             height: 100%;
-                            border-top: 10px solid $primary;    
+                            border-top: 10px solid $primary;
                             display: inline-flex;
                             justify-content: center;
                             align-items: center;
@@ -103,11 +103,11 @@
                     height: 100%;
                     display: flex;
                     align-items: center;
-                    
+
                     @media (max-width: 768px) {
                         justify-content: flex-end;
                     }
-                    
+
                     .menu {
                         height: 100%;
                         padding: 20px;
@@ -121,6 +121,8 @@
                             visibility: hidden;
                             opacity: 0;
                             margin-right: 20px;
+                            height: auto;
+                            margin-top: 150px;
 
                             &.show {
                                 visibility: visible;
@@ -143,16 +145,11 @@
                                 border-right: 0;
                                 border-bottom: 1px solid #fff;
                                 width: 100px;
-                                text-align: center;    
-                            }
-
-                            @media (max-width: 360px) {
-                                margin-top: 0;
-                                padding-bottom: 0;
+                                text-align: center;
                             }
 
                             &:last-child {
-                                border-right: none;    
+                                border-right: none;
 
                                 @media (max-width: 767px) {
                                     border-bottom: none;
@@ -164,7 +161,7 @@
                                 align-items: center;
                                 height: 100%;
                                 width: 100%;
-                                padding: 0 40px;   
+                                padding: 0 40px;
                                 text-decoration: none;
                                 text-transform: uppercase;
                                 font-weight: 300;
@@ -206,12 +203,12 @@
                     color: #fff;
                     margin: 0;
                 }
-                
+
                 h1:last-child {
                     color: $text-color;
-                } 
+                }
             }
-        }        
+        }
     }
 
     .cookies {
@@ -232,7 +229,7 @@
             justify-content: space-between;
             align-items: center;
             padding: 0 30px;
-            
+
             @media (max-width: 767px) {
                 flex-wrap: wrap;
             }
@@ -271,7 +268,7 @@
                 @extend %main-btn;
                 padding: 5px 35px 5px 10px;
                 text-transform: uppercase;
-                position: relative;                
+                position: relative;
 
                 &::before, &::after {
                     content: "";
