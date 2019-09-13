@@ -1,19 +1,17 @@
 .map-section {
-    background: url("../images/map-with-marker.png") center right no-repeat $lightgrey;
-    padding-top: 150px;
-    padding-bottom: 125px;
+    position: relative;
     text-align: left;
+    padding: 0;
 
-    @media (max-width: 575px) {
-        background-position: 60% 0%;
+    .adress {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        transform: translateY(-50%);
     }
-    @media (min-width: 576px) and (max-width: 767px) {
-        background-position: 80% 0%;
-    }
-
-    .adress-wrapper {
+    .adress-content {
         max-width: 350px;
-        padding: 20px 15px 15px 63px;        
+        padding: 20px 15px 15px 63px;
         font-size: 22px;
         line-height: 24px;
         font-weight: 300;

@@ -992,25 +992,19 @@ template {
 }
 
 .map-section {
-  background: url("../images/map-with-marker.png") center right no-repeat #f1f1f1;
-  padding-top: 150px;
-  padding-bottom: 125px;
+  position: relative;
   text-align: left;
+  padding: 0;
 }
 
-@media (max-width: 575px) {
-  .map-section {
-    background-position: 60% 0%;
-  }
+.map-section .adress {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
 }
 
-@media (min-width: 576px) and (max-width: 767px) {
-  .map-section {
-    background-position: 80% 0%;
-  }
-}
-
-.map-section .adress-wrapper {
+.map-section .adress-content {
   max-width: 350px;
   padding: 20px 15px 15px 63px;
   font-size: 22px;
@@ -1023,16 +1017,16 @@ template {
 }
 
 @media (max-width: 575px) {
-  .map-section .adress-wrapper {
+  .map-section .adress-content {
     max-width: 300px;
   }
 }
 
-.map-section .adress-wrapper .company-name {
+.map-section .adress-content .company-name {
   font-weight: 400;
 }
 
-.map-section .adress-wrapper .compass {
+.map-section .adress-content .compass {
   position: absolute;
   top: 15px;
   left: 15px;
